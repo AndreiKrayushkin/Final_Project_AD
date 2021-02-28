@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/wine_list"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="@string/wine_list" />
+        <item
+            android:id="@+id/add_wine"
+            android:icon="@drawable/ic_baseline_mode_comment_24"
+            android:title="@string/add_wine_in_list" />
+<!--        <item-->
+<!--            android:id="@+id/nav_slideshow"-->
+<!--            android:icon="@drawable/ic_baseline_settings_24"-->
+<!--            android:title="@string/settings" />-->
+        <item
+            android:id="@+id/wine_filter"
+            android:title="@string/filter_wine"/>
+        <item
+            android:id="@+id/wine_favorite"
+            android:title="@string/my_favorite"/>
+    </group>
+</menu>

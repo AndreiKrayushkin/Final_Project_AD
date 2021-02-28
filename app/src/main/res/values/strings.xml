@@ -1,0 +1,54 @@
+<resources>
+    <!--Total-->
+    <string name="app_name">Final-Project</string>
+    <string name="apply">Apply</string>
+    
+    <!--Layout header name-->
+    <string name="menu_home">Wine list</string>
+    <string name="menu_gallery">Add wine</string>
+    <string name="menu_slideshow">Slideshow</string>
+    
+    <!--drawer menu-->
+    <string name="wine_list">Список вин</string>
+    <string name="add_wine_in_list">Добавить вино</string>
+    <string name="filter_wine">Фильтр</string>
+    <string name="my_favorite">Избранное</string>
+    <string name="wine_info">Информация о вине</string>
+<!--    <string name="settings">Настройки</string>-->
+
+    <!--Item_wine_layout-->
+    <string name="rating_item_wine">Рейтинг:</string>
+    <string name="year_item_wine">Год урожая:</string>
+    <string name="type_item_wine">Тип:</string>
+    <string name="country_item_wine">Страна:</string>
+
+    <!--activity_main-->
+    <string name="header_activity_main">Список вин</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    
+    <!--add wine layout-->
+    <string name="add_name_wine">Введите название вина</string>
+    <string name="add_year_wine">Введите год урожая</string>
+    <string name="add_name_manufacturer">Изготовитель вина</string>
+    <string name="add_type_wine">Типп вина</string>
+    <string name="add_alcohol_value">Процент алкоголя</string>
+    <string name="add_sugar_value">Грамм сахара на литр</string>
+    <string name="add_composition">Состав</string>
+
+    <!--wine info fragment-->
+    <string name="info_manufacturer_wine">Изготовитель:</string>
+    <string name="info_year_wine">Год урожая:</string>
+    <string name="info_alcohol_value">Процент спирта:</string>
+    <string name="info_sugar_value">Сахар (грамм на литр):</string>
+
+    <!--wine filter fragment-->
+    <string name="filter_country_title">Страна:</string>
+    <string name="filter_year_title">Год:</string>
+    <string name="filter_type_title">Тип:</string>
+</resources>

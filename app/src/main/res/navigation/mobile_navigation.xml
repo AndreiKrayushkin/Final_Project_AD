@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/wine_list">
+
+    <fragment
+        android:id="@+id/wine_list"
+        android:name="by.andrei.firstproject.final_project.ui.mainListWine.WineList"
+        android:label="@string/wine_list"
+        tools:layout="@layout/fragment_wine_list">
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_wine"
+        android:name="by.andrei.firstproject.final_project.ui.addWine.AddWineFragment"
+        android:label="@string/add_wine_in_list"
+        tools:layout="@layout/fragment_wine_add" />
+
+    <fragment
+        android:id="@+id/wine_info"
+        android:name="by.andrei.firstproject.final_project.ui.infoWine.WineInfo"
+        android:label="@string/wine_info"
+        tools:layout="@layout/fragment_wine_info" />
+
+    <fragment
+        android:id="@+id/wine_filter"
+        android:name="by.andrei.firstproject.final_project.ui.filterWine.WineFilter"
+        android:label="@string/filter_wine"
+        tools:layout="@layout/fragment_wine_filter"/>
+
+    <fragment
+        android:id="@+id/wine_favorite"
+        android:name="by.andrei.firstproject.final_project.ui.favoriteWine.WineFavorite"
+        android:label="fragment_wine_favorite"
+        tools:layout="@layout/fragment_wine_favorite" />
+
+</navigation>
