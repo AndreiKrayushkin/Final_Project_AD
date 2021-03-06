@@ -5,6 +5,22 @@
         android:width="2px"
         android:color="@color/background_vine_item"
         />
+    <solid android:color="@color/background_items"/>
     <corners android:radius="5dp"/>
 
 </shape>
+
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <item>-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <stroke-->
+<!--                android:width="2px"-->
+<!--                android:color="@color/background_vine_item"-->
+<!--                />-->
+<!--            <corners android:radius="5dp"/>-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--    <item>-->
+<!--        -->
+<!--    </item>-->
+<!--</layer-list>-->

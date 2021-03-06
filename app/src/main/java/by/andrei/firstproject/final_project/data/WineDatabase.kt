@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import by.andrei.firstproject.final_project.dao.WineDAO
 
 @Database
-    (entities = [Wine::class], version = 2)
+    (entities = [Wine::class], version = 3)
 
 abstract class WineDatabase : RoomDatabase() {
     abstract fun getWineDAO(): WineDAO

@@ -6,21 +6,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/wine_list"
-            android:icon="@drawable/ic_baseline_favorite_24"
+            android:icon="@drawable/ic_baseline_view_list_24"
             android:title="@string/wine_list" />
         <item
-            android:id="@+id/add_wine"
-            android:icon="@drawable/ic_baseline_mode_comment_24"
-            android:title="@string/add_wine_in_list" />
-<!--        <item-->
-<!--            android:id="@+id/nav_slideshow"-->
-<!--            android:icon="@drawable/ic_baseline_settings_24"-->
-<!--            android:title="@string/settings" />-->
-        <item
-            android:id="@+id/wine_filter"
-            android:title="@string/filter_wine"/>
-        <item
             android:id="@+id/wine_favorite"
+            android:icon="@drawable/ic_baseline_favorite_24"
             android:title="@string/my_favorite"/>
+        <item
+            android:id="@+id/add_new_manufacturer"
+            android:icon="@drawable/ic_baseline_settings_suggest_24"
+            android:title="@string/add_manufacturer"/>
     </group>
 </menu>

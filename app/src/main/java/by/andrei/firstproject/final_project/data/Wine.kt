@@ -8,17 +8,18 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class Wine(
-    val name: String?,              //название
-    @ColumnInfo val rating: Double,             //рейтинг
-    @ColumnInfo val year: String?,                  //год урожая
-    @ColumnInfo val manufacturer: String?,      //изготовитель
-    @ColumnInfo val type: String?,              //тип (красное, белое и т.д.)
+    val name: String?,                           //название
+    @ColumnInfo val rating: Double,              //
+    @ColumnInfo val year: String?,               //год урожая
+    @ColumnInfo val country: String?,            //страна
+    @ColumnInfo val manufacturer: String?,       //изготовитель
+    @ColumnInfo val type: String?,               //тип (красное, белое и т.д.)
     @ColumnInfo val alcohol: String?,            //процент алкоголя
     @ColumnInfo val sugar: String?,              //количетво сахара г/л
-    @ColumnInfo val composition: String?,       //состав
-    @ColumnInfo val coordinateFirst: Double,    //первая координата
-    @ColumnInfo val coordinateSecond: Double,    //вторая координата
-    @ColumnInfo val wineImage: String?
+    @ColumnInfo val composition: String?,        //
+    @ColumnInfo val coordinateFirst: Double,     //
+    @ColumnInfo val coordinateSecond: Double,    //
+    @ColumnInfo val wineImage: String?           //изображение вина
 ): Parcelable {
     @PrimaryKey (autoGenerate = true)
     @ColumnInfo var id: Int? = null
@@ -26,6 +27,7 @@ data class Wine(
     constructor(parcel: Parcel) : this(
             parcel.readString(),
             parcel.readDouble(),
+            parcel.readString(),
             parcel.readString(),
             parcel.readString(),
             parcel.readString(),
@@ -42,6 +44,7 @@ data class Wine(
         parcel.writeString(name)
         parcel.writeDouble(rating)
         parcel.writeString(year)
+        parcel.writeString(country)
         parcel.writeString(manufacturer)
         parcel.writeString(type)
         parcel.writeString(alcohol)
@@ -66,5 +69,4 @@ data class Wine(
             return arrayOfNulls(size)
         }
     }
-
 }

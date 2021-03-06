@@ -5,41 +5,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.infoWine.WineInfo" >
+    tools:context=".ui.infoWine.WineInfo"
+    android:background="@color/background_total">
     <ImageView
         android:id="@+id/imageWinePhotoInWineInfoFragment"
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="250dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:id="@+id/titleManufacturerInWineInfoFragment"
+        android:id="@+id/titleCountryInWineInfoFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/info_manufacturer_wine"
+        android:text="@string/info_country_wine"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageWinePhotoInWineInfoFragment"
         android:layout_marginStart="20dp"
-        android:textSize="12sp"/>
+        />
     <TextView
-        android:id="@+id/textManufacturerInWineInfoFragment"
+        android:id="@+id/textCountyInWineInfoFragment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/imageWinePhotoInWineInfoFragment"
+        app:layout_constraintTop_toTopOf="@+id/titleCountryInWineInfoFragment"
         app:layout_constraintStart_toStartOf="@+id/textSugarValueInWineInfoFragment"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="20dp"
-        android:textSize="12sp"/>
+        />
 
     <TextView
         android:id="@+id/titleYearWineInWineInfoFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/info_year_wine"
-        app:layout_constraintTop_toBottomOf="@id/textManufacturerInWineInfoFragment"
-        app:layout_constraintStart_toStartOf="@+id/titleManufacturerInWineInfoFragment"
-        android:textSize="12sp" />
+        app:layout_constraintTop_toBottomOf="@id/textCountyInWineInfoFragment"
+        app:layout_constraintStart_toStartOf="@+id/titleCountryInWineInfoFragment"
+        />
     <TextView
         android:id="@+id/textYearWineInWineInfoFragment"
         android:layout_width="0dp"
@@ -48,16 +50,16 @@
         app:layout_constraintStart_toStartOf="@+id/textSugarValueInWineInfoFragment"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="20dp"
-        android:textSize="12sp"/>
+        />
 
     <TextView
         android:id="@+id/titleAlcoholValueInWineInfoFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/info_alcohol_value"
-        app:layout_constraintStart_toStartOf="@+id/titleManufacturerInWineInfoFragment"
+        app:layout_constraintStart_toStartOf="@+id/titleYearWineInWineInfoFragment"
         app:layout_constraintTop_toBottomOf="@id/textYearWineInWineInfoFragment"
-        android:textSize="12sp"/>
+        />
     <TextView
         android:id="@+id/textAlcoholValueInWineInfoFragment"
         android:layout_width="0dp"
@@ -66,16 +68,16 @@
         app:layout_constraintStart_toStartOf="@+id/textSugarValueInWineInfoFragment"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="20dp"
-        android:textSize="12sp"/>
+        />
 
     <TextView
         android:id="@+id/titleSugarValueInWineInfoFragment"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="@string/info_sugar_value"
-        app:layout_constraintStart_toStartOf="@+id/titleManufacturerInWineInfoFragment"
+        app:layout_constraintStart_toStartOf="@+id/titleAlcoholValueInWineInfoFragment"
         app:layout_constraintTop_toBottomOf="@id/textAlcoholValueInWineInfoFragment"
-        android:textSize="12sp"/>
+        />
     <TextView
         android:id="@+id/textSugarValueInWineInfoFragment"
         android:layout_width="0dp"
@@ -85,5 +87,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="10dp"
-        android:textSize="12sp"/>
+        />
+
+    <TextView
+        android:id="@+id/titleManufacturerInWineInfoFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_manufacturer_wine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textSugarValueInWineInfoFragment"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/textManufacturerInWineInfoFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/titleManufacturerInWineInfoFragment"
+        app:layout_constraintStart_toStartOf="@+id/textSugarValueInWineInfoFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        />
+
+    <com.google.android.libraries.maps.MapView
+        android:id="@+id/mapInfoFactory"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textManufacturerInWineInfoFragment"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,12 +15,13 @@
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.FinalProject" >
-<!--        <activity-->
-<!--            android:name=".MainActivity2"-->
-<!--            android:label="@string/title_activity_main2"-->
-<!--            android:theme="@style/Theme.FinalProject.NoActionBar" >-->
-<!--        </activity>-->
-        <activity android:name=".MainActivity2" >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCnE68QTotEGV5xwJS6Yr9Ph4--Gj2c5oY" />
+
+        <activity android:name=".MainActivity2"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action
                     android:name="android.intent.action.MAIN"
@@ -34,11 +35,9 @@
             android:authorities="by.andrei.firstproject.final_project.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
-
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file" />
-
         </provider>
 
     </application>

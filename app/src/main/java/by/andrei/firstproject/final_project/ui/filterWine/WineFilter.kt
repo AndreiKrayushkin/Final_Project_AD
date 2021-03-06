@@ -2,14 +2,13 @@ package by.andrei.firstproject.final_project.ui.filterWine
 
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import by.andrei.firstproject.final_project.MainActivity2
 import by.andrei.firstproject.final_project.R
 import by.andrei.firstproject.final_project.adapters.CountryFilterAdapter
 import by.andrei.firstproject.final_project.adapters.TypeFilterAdapter
@@ -38,6 +37,7 @@ class WineFilter : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val root = inflater.inflate(R.layout.fragment_wine_filter, container, false)
+        setHasOptionsMenu(true)
 
         recyclerViewCountry = root.findViewById(R.id.countryInFilterList)
         recyclerViewYear = root.findViewById(R.id.yearInFilterList)
@@ -94,5 +94,11 @@ class WineFilter : Fragment() {
             layoutManager = linearLayoutManager
             adapter = typeFilterAdapter
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        menu.clear()
+        inflater.inflate(R.menu.menu_empty, menu)
+        super.onCreateOptionsMenu(menu, inflater)
     }
 }

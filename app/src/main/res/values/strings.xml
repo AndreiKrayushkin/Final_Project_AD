@@ -14,13 +14,15 @@
     <string name="filter_wine">Фильтр</string>
     <string name="my_favorite">Избранное</string>
     <string name="wine_info">Информация о вине</string>
-<!--    <string name="settings">Настройки</string>-->
+    <string name="add_manufacturer">Добавить изготовителя</string>
 
     <!--Item_wine_layout-->
     <string name="rating_item_wine">Рейтинг:</string>
     <string name="year_item_wine">Год урожая:</string>
     <string name="type_item_wine">Тип:</string>
     <string name="country_item_wine">Страна:</string>
+    <string name="message_add_wine_to_favorite">Вино добавлено в избранное</string>
+    <string name="message_removed_wine_from_favorite">Вино удалено из избранного</string>
 
     <!--activity_main-->
     <string name="header_activity_main">Список вин</string>
@@ -31,24 +33,32 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="activity_filter">Filter</string>
     
     <!--add wine layout-->
     <string name="add_name_wine">Введите название вина</string>
     <string name="add_year_wine">Введите год урожая</string>
-    <string name="add_name_manufacturer">Изготовитель вина</string>
-    <string name="add_type_wine">Типп вина</string>
+    <string name="add_name_manufacturer">Страна</string>
+    <string name="add_type_wine">Тип вина</string>
     <string name="add_alcohol_value">Процент алкоголя</string>
     <string name="add_sugar_value">Грамм сахара на литр</string>
     <string name="add_composition">Состав</string>
+    <string name="add_manufacturer_wine">Выберите производителя</string>
 
     <!--wine info fragment-->
     <string name="info_manufacturer_wine">Изготовитель:</string>
+    <string name="info_country_wine">Страна:</string>
     <string name="info_year_wine">Год урожая:</string>
     <string name="info_alcohol_value">Процент спирта:</string>
-    <string name="info_sugar_value">Сахар (грамм на литр):</string>
+    <string name="info_sugar_value">Сахар (гр/л):</string>
 
     <!--wine filter fragment-->
     <string name="filter_country_title">Страна:</string>
     <string name="filter_year_title">Год:</string>
     <string name="filter_type_title">Тип:</string>
+
+    <!--add manufacturer fragment-->
+    <string name="manufacturer_name_add">Изготовитель:</string>
+    <string name="manufacturer_coord_first">Координата х:</string>
+    <string name="manufacturer_coord_second">Координата у:</string>
 </resources>

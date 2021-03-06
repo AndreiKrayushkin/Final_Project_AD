@@ -4,116 +4,183 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".ui.addWine.AddWineFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/background_total">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/viewPhotoWineInAddLayout"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/grey"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buttonAddPhoto"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/ic_baseline_photo_camera_24"
+            android:foregroundTint="@color/white"
+            android:foregroundGravity="center"
+            android:backgroundTint="@color/total_blue"
+            android:layout_gravity="center"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="10dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buttonAddWineInList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/ic_baseline_check_24"
+            android:foregroundTint="@color/white"
+            android:foregroundGravity="center"
+            android:backgroundTint="@color/total_blue"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:onClick="addWineInListAndShowApplyInfo"
+            android:background="@color/yellow"/>
+    </LinearLayout>
+
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/titleNameWineInAddLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:textAlignment="center"
-        android:text="@string/add_name_wine"/>
+        android:text="@string/add_name_wine"
+        android:layout_marginTop="20dp"
+        android:textSize="12sp"/>
     <EditText
         android:id="@+id/addNameWineInAddLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/add_name_wine"/>
+        android:hint="@string/add_name_wine"
+        android:textSize="14sp"/>
+
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/titleNameCountryWineInAddLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:textAlignment="center"
         android:layout_marginTop="10dp"
-        android:text="@string/add_year_wine"/>
+        android:text="@string/add_name_manufacturer"
+        android:textSize="12sp" />
+    <EditText
+        android:id="@+id/addNameCountryWineInAddLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_name_manufacturer"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/titleNameManufacturerWineInAddLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_manufacturer_wine"
+        android:textSize="12sp" />
+    <Spinner
+        android:id="@+id/manufacturerSpinnerInAddLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/titleYearWineInAddLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_year_wine"
+        android:textSize="12sp" />
     <EditText
         android:id="@+id/addYearWineInAddLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/add_year_wine"/>
+        android:hint="@string/add_year_wine"
+        android:textSize="14sp" />
+
+
+
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/titleTypeWineInAddLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:textAlignment="center"
         android:layout_marginTop="10dp"
-        android:text="@string/add_name_manufacturer"/>
-    <EditText
-        android:id="@+id/addNameManufacturerWineInAddLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/add_name_manufacturer"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textAlignment="center"
-        android:layout_marginTop="10dp"
-        android:text="@string/add_type_wine"/>
+        android:text="@string/add_type_wine"
+        android:textSize="12sp"/>
     <EditText
         android:id="@+id/addTypeWineInAddLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/add_type_wine"/>
+        android:hint="@string/add_type_wine"
+        android:textSize="14sp"/>
+
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/titleAlcoholWineInAddLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:textAlignment="center"
         android:layout_marginTop="10dp"
-        android:text="@string/add_alcohol_value"/>
+        android:text="@string/add_alcohol_value"
+        android:textSize="12sp"/>
     <EditText
         android:id="@+id/addAlcoholWineInAddLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/add_alcohol_value"/>
+        android:hint="@string/add_alcohol_value"
+        android:textSize="14sp"/>
+
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/titleSugarWineInAddLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:textAlignment="center"
         android:layout_marginTop="10dp"
-        android:text="@string/add_sugar_value"/>
+        android:text="@string/add_sugar_value"
+        android:textSize="12sp"/>
     <EditText
         android:id="@+id/addSugarWineInAddLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/add_sugar_value"/>
+        android:hint="@string/add_sugar_value"
+        android:textSize="14sp"/>
+
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/titleCompositionWineInAddLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:textAlignment="center"
         android:layout_marginTop="10dp"
-        android:text="@string/add_composition"/>
+        android:text="@string/add_composition"
+        android:textSize="12sp"/>
     <EditText
         android:id="@+id/addCompositionWineInAddLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/add_composition"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/buttonAddWineInList"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="CLICK add wine"
-            android:onClick="addWineInListAndShowApplyInfo"
-            android:background="@color/yellow"/>
-        <Button
-            android:id="@+id/buttonAddPhoto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="CLICK add photo"
-            android:onClick="addPhoto"
-            android:layout_marginStart="60dp"
-            android:background="@color/yellow"/>
-    </LinearLayout>
+        android:hint="@string/add_composition"
+        android:textSize="14sp"/>
 
-    <ImageView
-        android:id="@+id/viewPhotoWineInAddLayout"
-        android:layout_width="100dp"
-        android:layout_height="100dp"/>
+
+
+
 </LinearLayout>

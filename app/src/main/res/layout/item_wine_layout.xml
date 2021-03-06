@@ -12,7 +12,7 @@
         android:background="@drawable/border_item_vine"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="5dp"/>
+        android:layout_margin="10dp"/>
 
     <ImageView
         android:id="@+id/photoWineInItemWineLayout"
@@ -20,7 +20,7 @@
         android:layout_height="130dp"
         app:layout_constraintStart_toStartOf="@id/borderWineItem"
         app:layout_constraintTop_toTopOf="@id/borderWineItem"
-        android:background="@color/grey"
+        android:background="@color/background_image"
         android:src="@drawable/ic_baseline_photo_camera_24"/>
     <TextView
         android:id="@+id/nameWineInItemWineLayout"
@@ -40,6 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/rating_item_wine"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@id/nameWineInItemWineLayout"
         app:layout_constraintTop_toBottomOf="@id/nameWineInItemWineLayout"
         android:layout_marginTop="8dp"/>
@@ -48,6 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" "
+        android:textSize="12sp"
         tools:text="5.0"
         app:layout_constraintStart_toEndOf="@id/titleRatingInItemWineLayout"
         app:layout_constraintTop_toTopOf="@id/titleRatingInItemWineLayout"
@@ -69,7 +71,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@id/titleRatingInItemWineLayout"
         app:layout_constraintTop_toBottomOf="@id/titleRatingInItemWineLayout"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:textSize="12sp"
         android:text="@string/year_item_wine"/>
     <TextView
@@ -121,36 +123,56 @@
         android:layout_marginStart="10dp"
         android:textColor="@color/grey_value"
         android:textStyle="bold"/>
-    <ImageButton
-        android:id="@+id/iconCommentInItemWineLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="@id/borderWineItem"
-        app:layout_constraintTop_toTopOf="@id/borderWineItem"
-        app:layout_constraintBottom_toTopOf="@id/iconLikeInItemWineLayout"
-        android:src="@drawable/ic_baseline_mode_comment_24"
-        android:layout_marginEnd="15dp"
-        android:background="@null"
-        android:tint="@color/grey"/>
+
     <TextView
-        android:id="@+id/valueCommentInItemWineLayout"
+        android:id="@+id/titleManufacturerInItemWineLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="@id/iconCommentInItemWineLayout"
-        app:layout_constraintEnd_toEndOf="@id/iconCommentInItemWineLayout"
-        app:layout_constraintTop_toBottomOf="@id/iconCommentInItemWineLayout"
-        android:text=" "
-        tools:text="25"
-        android:textSize="12sp"/>
+        app:layout_constraintStart_toStartOf="@id/titleTypeInItemWineLayout"
+        app:layout_constraintTop_toBottomOf="@id/titleCountryInItemWineLayout"
+        android:textSize="12sp"
+        android:text="Производитель"/>
+    <TextView
+        android:id="@+id/valueManufacturerInItemWineLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/titleManufacturerInItemWineLayout"
+        app:layout_constraintTop_toTopOf="@id/titleManufacturerInItemWineLayout"
+        tools:text="Завод"
+        android:textSize="12sp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/grey_value"
+        android:textStyle="bold"/>
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/iconCommentInItemWineLayout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/borderWineItem"-->
+<!--        app:layout_constraintTop_toTopOf="@id/borderWineItem"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/iconLikeInItemWineLayout"-->
+<!--        android:src="@drawable/ic_baseline_mode_comment_24"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:background="@null"-->
+<!--        android:tint="@color/grey"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/valueCommentInItemWineLayout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintStart_toStartOf="@id/iconCommentInItemWineLayout"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/iconCommentInItemWineLayout"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/iconCommentInItemWineLayout"-->
+<!--        android:text=" "-->
+<!--        tools:text="25"-->
+<!--        android:textSize="12sp"/>-->
     <ImageButton
         android:id="@+id/iconLikeInItemWineLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="@id/borderWineItem"
-        app:layout_constraintBottom_toBottomOf="@id/borderWineItem"
-        app:layout_constraintTop_toBottomOf="@id/iconCommentInItemWineLayout"
-        android:src="@drawable/ic_baseline_favorite_border_24"
+        app:layout_constraintTop_toTopOf="@id/nameWineInItemWineLayout"
+        tools:src="@drawable/ic_baseline_favorite_border_24"
         android:layout_marginEnd="15dp"
         android:background="@null"
         app:tint="@color/yellow"/>

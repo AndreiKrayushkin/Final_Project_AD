@@ -16,8 +16,8 @@ interface WineDAO {
     fun getItemWine(wineId: Int?): Wine
 
 //Для одиночного совпадения
-    @Query("SELECT * FROM wine WHERE manufacturer = :manufacturerValue")
-    fun getWineListForManufacturer(manufacturerValue: String): MutableList<Wine>
+    @Query("SELECT * FROM wine WHERE country = :countryValue")
+    fun getWineListForCountry(countryValue: String): MutableList<Wine>
 
     @Query("SELECT * FROM wine WHERE year = :yearValue")
     fun getWineListForYear(yearValue: String): MutableList<Wine>
@@ -26,20 +26,20 @@ interface WineDAO {
     fun getWineListForType(typeValue: String): MutableList<Wine>
 
     //Для двойного совпадения
-    @Query("SELECT * FROM wine WHERE manufacturer = :manufacturerValue AND year = :yearValue")
-    fun getWineListForManufacturerAndYear(manufacturerValue: String, yearValue: String): MutableList<Wine>
+    @Query("SELECT * FROM wine WHERE country = :countryValue AND year = :yearValue")
+    fun getWineListForCountryAndYear(countryValue: String, yearValue: String): MutableList<Wine>
 
-    @Query("SELECT * FROM wine WHERE manufacturer = :manufacturerValue AND type = :typeValue")
-    fun getWineListForManufacturerAndType(manufacturerValue: String, typeValue: String): MutableList<Wine>
+    @Query("SELECT * FROM wine WHERE country = :countryValue AND type = :typeValue")
+    fun getWineListForCountryAndType(countryValue: String, typeValue: String): MutableList<Wine>
 
     @Query("SELECT * FROM wine WHERE year = :yearValue AND type = :typeValue")
     fun getWineListForYearAndType(yearValue: String, typeValue: String): MutableList<Wine>
 
     //Для тройного совпадения
-    @Query("SELECT * FROM wine WHERE manufacturer = :manufacturerValue AND year = :yearValue AND type = :typeValue")
-    fun getWineListForCountryAndYearAndType(manufacturerValue: String, yearValue: String, typeValue: String): MutableList<Wine>
+    @Query("SELECT * FROM wine WHERE country = :countryValue AND year = :yearValue AND type = :typeValue")
+    fun getWineListForCountryAndYearAndType(countryValue: String, yearValue: String, typeValue: String): MutableList<Wine>
 
-    @Query("SELECT manufacturer FROM wine")
+    @Query("SELECT country FROM wine")
     fun getCountryList(): List<String>
 
     @Query("SELECT year FROM wine")

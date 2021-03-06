@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "1030757760366",
-    "project_id": "finalproject-bc64a",
-    "storage_bucket": "finalproject-bc64a.appspot.com"
+    "project_number": "608554001341",
+    "firebase_url": "https://wineproject-e7d9a-default-rtdb.firebaseio.com",
+    "project_id": "wineproject-e7d9a",
+    "storage_bucket": "wineproject-e7d9a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1030757760366:android:2640fa75cfabc42765957f",
+        "mobilesdk_app_id": "1:608554001341:android:578402a75d277095ca68d4",
         "android_client_info": {
           "package_name": "by.andrei.firstproject.final_project"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1030757760366-s4klgojdd0pjt7gfjo79botjhldtirj7.apps.googleusercontent.com",
+          "client_id": "608554001341-5dgm5vt2r0erj4bh2mrj0dso4m3l1i8b.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDUYwhWjMaIQv2Q0L4Wwn2ihnB3VQyarA4"
+          "current_key": "AIzaSyB5KlnIloIcGYl_fX8_5fmYLfhmU95dmaY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1030757760366-s4klgojdd0pjt7gfjo79botjhldtirj7.apps.googleusercontent.com",
+              "client_id": "608554001341-5dgm5vt2r0erj4bh2mrj0dso4m3l1i8b.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

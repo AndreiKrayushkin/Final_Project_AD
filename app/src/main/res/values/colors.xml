@@ -12,5 +12,7 @@
     <color name="yellow">#FFEB3B</color>
     <color name="grey_value">#4A4A4A</color>
     <color name="total_blue">#0028FF</color>
-
+    <color name="background_image">#D6DDFF</color>
+    <color name="background_total">#EFF1FF</color>
+    <color name="background_items">#EFF0FF</color>
 </resources>
